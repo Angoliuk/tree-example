@@ -1,6 +1,7 @@
 import { initContract } from "@ts-rest/core";
 
 import { authContract } from "./auth-contract";
+import { gitContract } from "./git-contract";
 import { usersContract } from "./users-contract";
 
 const c = initContract();
@@ -8,6 +9,7 @@ const c = initContract();
 export const webContract = c.router(
   {
     auth: authContract(c),
+    git: gitContract(c),
     users: usersContract(c),
   },
   {
