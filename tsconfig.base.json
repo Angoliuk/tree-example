@@ -1,0 +1,28 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ESNext",
+    "module": "esnext",
+    "lib": ["ESNext", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "allowUnreachableCode": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/db": ["./packages/db/src/index.ts"],
+      "@/shared/*": ["./packages/shared/src/*"],
+      "@/tailwind": ["./packages/tailwind/src/index.ts"],
+      "@/tailwind-config": ["./packages/tailwind/src/tailwind.config.ts"],
+      "@/ui-shared/*": ["./packages/ui-shared/src/*"],
+      "@/web-shared/*": ["./packages/web-shared/src/*"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
